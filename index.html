@@ -7,30 +7,50 @@
     <link rel="stylesheet" href="css/styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.40/moment-timezone-with-data-1970-2030.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=EB+Garamond&display=swap"
+      rel="stylesheet"
+    />
     <title>World Clock</title>
   </head>
   <body>
-    <div class="container"></div>
-    <h1>World Clock</h1>
-    <select>
-      <option value="">Select a city ....</option>
-      <option value="">New York</option>
-      <option value="">Beijing</option>
-      <option value="">Paris</option>
-    </select>
+    <video autoplay muted loop id="myVideo">
+      <source src="mp4/Digital_Map_Background.mp4" type="video/mp4" />
+    </video>
+    <div class="container">
+      <h1>World Clock</h1>
+      <select>
+        <option value="">Select a city ....</option>
+        <option value="">New York</option>
+        <option value="">Beijing</option>
+        <option value="">Paris</option>
+      </select>
 
-    <div class="city">
-      <h2>Los Angeles</h2>
-      <div class="date"></div>
-      <div class="time"></div>
-    </div>
-    <div class="city">
-      <h2>Sydney</h2>
-      <div class="date"></div>
-      <div class="time"></div>
+      <div class="city">
+        <div>
+          <h2>Los Angeles</h2>
+          <div class="date">date</div>
+        </div>
+        <div class="time">time<small> AM</small></div>
+      </div>
+      <div class="city">
+        <div>
+          <h2>Paris</h2>
+          <div class="date">date</div>
+        </div>
+        <div class="time">time<small> AM</small></div>
+      </div>
     </div>
     <footer>
-      This project was coded by Johanna Sanchez and is
+      This project was coded by <strong>Johanna Sanchez</strong> and is
       <a href="https://github.com/Vegasaga/World-clock" target="_blank">
         open sourced on Github.</a
       >
